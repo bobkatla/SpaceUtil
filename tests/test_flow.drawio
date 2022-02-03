@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2022-02-03T01:04:32.950Z" agent="5.0 (Windows)" version="16.0.0" etag="LippOh6PtYXol0Dw0_nb" type="github"><diagram id="JmzNrq2lxmDHd2yrBxA3">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-02-03T02:08:39.167Z" agent="5.0 (Windows)" etag="Zfkno-TfPLCUgu5_hWpy" version="16.0.0" type="github">
+  <diagram id="JmzNrq2lxmDHd2yrBxA3" name="Page-1">
+    <mxGraphModel dx="868" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-2" value="Check data (correct form?)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="140" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-3" value="Data from API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-4" value="Get Space data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="230" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-6" value="The idea would be breaking the big chunk of data into smaller data for processing&lt;br&gt;--&amp;gt; done with graph QL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-7" value="Get occupancy data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="250" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yjzNHYMeYC0bmRaxQ5hA-9" value="Get Floor data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="90" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
