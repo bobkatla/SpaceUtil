@@ -62,15 +62,27 @@ if __name__ == "__main__":
     scheme = query_data(q_scheme)
     ls_customeTypes = [x["name"] for x in scheme["__schema"]["types"] if x["name"] not in ls_defaultTypes]
 
+    # put all the info into Python dict
     ls_info_data_short = {}
     ls_info_data_long = {}
+
     for type_name in ls_customeTypes:
         info_short = query_data(q_specificType_short(type_name))
-        info_long = query_data(q_specificType_long(type_name))
-
         ls_info_data_short[type_name] = info_short["__type"]
+
+        info_long = query_data(q_specificType_long(type_name))
         ls_info_data_long[type_name] = info_long["__type"]
 
     # print(ls_info_data_short)
 
     # Get all the info and put it in a json files to view
+    import os
+    if os.path.exists('payload_struct_short.json'):
+        os.remove('payload_struct_short.json')
+    with open('payload_struct_short.json', 'w') as outfile:
+        json.dump(ls_info_data_short, outfile)
+    
+    if os.path.exists('payload_struct_long.json'):
+        os.remove('payload_struct_long.json')
+    with open('payload_struct_long.json', 'w') as outfile:
+        json.dump(ls_info_data_long, outfile)
