@@ -46,7 +46,6 @@ q_specificType_long = lambda name_type: '''{
 # This like above but only name for easier view
 q_specificType_short = lambda name_type: '''{
     __type(name: %s) {
-        name 
         fields {
             name
         }
@@ -80,9 +79,9 @@ if __name__ == "__main__":
     if os.path.exists('payload_struct_short.json'):
         os.remove('payload_struct_short.json')
     with open('payload_struct_short.json', 'w') as outfile:
-        json.dump(ls_info_data_short, outfile)
+        json.dump(ls_info_data_short, outfile, sort_keys=True, indent=4)
     
     if os.path.exists('payload_struct_long.json'):
         os.remove('payload_struct_long.json')
     with open('payload_struct_long.json', 'w') as outfile:
-        json.dump(ls_info_data_long, outfile)
+        json.dump(ls_info_data_long, outfile, sort_keys=True, indent=4)
