@@ -1,4 +1,4 @@
-import tests.get_data as source
+import get_data as source
 
 
 if __name__ == '__main__':
@@ -15,5 +15,5 @@ if __name__ == '__main__':
         }
     '''
     resp = source.query_data(query)
-    print(resp.text)
+    print(resp)
 
