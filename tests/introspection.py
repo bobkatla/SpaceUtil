@@ -1,5 +1,4 @@
 from get_data import query_data
-import json
 
 '''This will help find the scheme/struct of the given api with GraphQL
     With this knowledge we can know what is available to query
@@ -76,6 +75,8 @@ if __name__ == "__main__":
 
     # Get all the info and put it in a json files to view
     import os
+    import json
+    
     if os.path.exists('payload_struct_short.json'):
         os.remove('payload_struct_short.json')
     with open('payload_struct_short.json', 'w') as outfile:

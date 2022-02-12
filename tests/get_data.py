@@ -1,14 +1,8 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
+from parameters_connect import url_auth, url_query, api_key, api_secret
 
-# Note that they are HTTPS, maybe need SSL cert, ofcourse can do verify=False
-url_auth = "https://core-api.app.xysense.io/api/v1/auth"
-url_query = "https://core-api.app.xysense.io/api/v1/query"
-
-# we need this from XY Sense, normally this should be in the env not here
-api_key = "bob-tests-monash-uni-api-key"
-api_secret = ""
 
 # make the request to get the token
 def get_token_raw(url, key, secret):
@@ -52,5 +46,10 @@ if __name__ == '__main__':
             }
         }
     '''
-    data = query_data(q)
+    q2 = '''{
+        sensorInstallations() {
+            sensor sensorId
+        }
+    }'''
+    data = query_data(q2)
     print(data)
