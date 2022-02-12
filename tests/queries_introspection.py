@@ -77,12 +77,12 @@ if __name__ == "__main__":
     import os
     import json
     
-    if os.path.exists('payload_struct_short.json'):
-        os.remove('payload_struct_short.json')
-    with open('payload_struct_short.json', 'w') as outfile:
+    if os.path.exists('./data_shape/payload_struct_short.json'):
+        os.remove('./data_shape/payload_struct_short.json')
+    with open('./data_shape/payload_struct_short.json', 'w') as outfile:
         json.dump(ls_info_data_short, outfile, sort_keys=True, indent=4)
     
-    if os.path.exists('payload_struct_long.json'):
-        os.remove('payload_struct_long.json')
-    with open('payload_struct_long.json', 'w') as outfile:
+    if os.path.exists('./data_shape/payload_struct_long.json'):
+        os.remove('./data_shape/payload_struct_long.json')
+    with open('./data_shape/payload_struct_long.json', 'w') as outfile:
         json.dump(ls_info_data_long, outfile, sort_keys=True, indent=4)
