@@ -24,13 +24,22 @@ def get_data_raw(url, token, query):
     res = requests.post(url, headers=headers, json={"query": query})
     return res
 
-def query_data(query):
+def query_full_data(query):
     raw_token = get_token_raw(url_auth, api_key, api_secret)
     token = raw_token.json()['idToken']
     raw_data = get_data_raw(url_query, token, query)
-    data = raw_data.json()["data"]
+    data = raw_data.json()
 
     return data
+
+def query_data(query):
+    data_full = query_full_data(query)
+    err = data_full["errors"]
+    data = data_full["data"]
+    if err:
+        return ["ERROR", err]
+    else:
+        return data
 
 if __name__ == '__main__':
     # Can put the testing here
@@ -51,5 +60,7 @@ if __name__ == '__main__':
             sensor sensorId
         }
     }'''
-    data = query_data(q2)
+
+    q_err = "{floorSpaces {ho he}}"
+    data = query_data(q_err)
     print(data)
