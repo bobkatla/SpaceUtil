@@ -20,6 +20,12 @@ def run_cmd(cmd):
             cur.execute(cmd)
             check = cur.fetchone()
         re_val = check
+        if isinstance(cmd, list) or isinstance(cmd, tuple):
+            for command in cmd:
+                cur.execute(command)
+        else:
+            cur.execute(cmd)
+        re_val = cur.fetchone()
         # close communication with the PostgreSQL database server
         cur.close()
         # commit the changes
@@ -27,6 +33,7 @@ def run_cmd(cmd):
     except (Exception, pg.DatabaseError) as error:
         print("ERROR")
         return error
+        print(error)
     finally:
         if conn is not None:
             conn.close()
@@ -35,5 +42,7 @@ def run_cmd(cmd):
 if __name__ == "__main__":
     comm = [
     "SELECT version()", "select * from test"]
+    comm = ''' 
+    '''
     check = run_cmd(comm)
     print(check)
