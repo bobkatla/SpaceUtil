@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-from parameters_connect import url_auth, url_query, api_key, api_secret
+from tests.api_query.parameters_connect import url_auth, url_query, api_key, api_secret
 
 
 # make the request to get the token
