@@ -3,6 +3,7 @@ from connect import config
 
 def run_cmd(cmd):
     conn = None
+    re_val = None
     try:
         # read the connection parameters
         params = config()
@@ -15,6 +16,7 @@ def run_cmd(cmd):
                 cur.execute(command)
         else:
             cur.execute(cmd)
+        re_val = cur.fetchone()
         # close communication with the PostgreSQL database server
         cur.close()
         # commit the changes
@@ -24,11 +26,10 @@ def run_cmd(cmd):
     finally:
         if conn is not None:
             conn.close()
+    return re_val
 
 if __name__ == "__main__":
-    comm = '''CREATE TABLE test (
-        id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL
-    )
+    comm = ''' 
     '''
-    run_cmd(comm)
+    check = run_cmd(comm)
+    print(check)
