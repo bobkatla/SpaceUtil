@@ -19,7 +19,7 @@ def config(filename='db.ini', section='postgresql'):
     return db
 
 
-def connect():
+def test():
     """ Connect to the PostgreSQL database server """
     conn = None
     try:
@@ -52,4 +52,4 @@ def connect():
 
 
 if __name__ == '__main__':
-    connect()
+    test()
