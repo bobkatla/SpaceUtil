@@ -11,25 +11,29 @@ def run_cmd(cmd):
         conn = pg.connect(**params)
         cur = conn.cursor()
         # create table one by one
+        check = []
         if isinstance(cmd, list) or isinstance(cmd, tuple):
             for command in cmd:
                 cur.execute(command)
+                check.append(cur.fetchone())
         else:
             cur.execute(cmd)
-        re_val = cur.fetchone()
+            check = cur.fetchone()
+        re_val = check
         # close communication with the PostgreSQL database server
         cur.close()
         # commit the changes
         conn.commit()
     except (Exception, pg.DatabaseError) as error:
-        print(error)
+        print("ERROR")
+        return error
     finally:
         if conn is not None:
             conn.close()
     return re_val
 
 if __name__ == "__main__":
-    comm = ''' 
-    '''
+    comm = [
+    "SELECT version()", "select * from test"]
     check = run_cmd(comm)
     print(check)
