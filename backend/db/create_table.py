@@ -1,7 +1,7 @@
-from tests.api_query.get_data import query_data
-import tests
+from backend.api_query.get_data import query_data
+import backend
 
-print(tests.__doc__)
+print(backend.__doc__)
 
 q = '''{
             floorSpaces {
