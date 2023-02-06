@@ -1,1 +1,89 @@
-<mxfile host="app.diagrams.net" modified="2023-02-06T04:45:45.532Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.6.0" etag="TpPxT_mEUQrMZNqteF7n" type="github"><diagram id="0cnR_GgSnHlHI1YMw1hw">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-06T04:58:34.108Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.6.0" etag="_MK42ZyeMxyIzx2OsQrP" type="github">
+  <diagram id="MZ5UduxJINnH4XNmA7vI" name="Page-1">
+    <mxGraphModel dx="582" dy="1634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=75;exitPerimeter=0;entryX=0.665;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-3" target="5SC78Nz7y7m_JzuNlaxy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-8" value="Requested &lt;br&gt;Json-based &lt;br&gt;data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5SC78Nz7y7m_JzuNlaxy-7">
+          <mxGeometry x="0.1371" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-3" value="Json-based database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.011;entryY=0.436;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-4" target="5SC78Nz7y7m_JzuNlaxy-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-6" value="SQL SELECT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5SC78Nz7y7m_JzuNlaxy-5">
+          <mxGeometry x="-0.1359" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.88;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-4" target="5SC78Nz7y7m_JzuNlaxy-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.96;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-4" target="5SC78Nz7y7m_JzuNlaxy-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-4" value="Json processing app" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="510" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-11" target="5SC78Nz7y7m_JzuNlaxy-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-11" value="Json files" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-12" target="5SC78Nz7y7m_JzuNlaxy-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-12" value="Python Dict" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="590" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-15" value="Other apps" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="463.5" y="460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-17" target="5SC78Nz7y7m_JzuNlaxy-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-21" value="SQL INSERT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5SC78Nz7y7m_JzuNlaxy-20">
+          <mxGeometry x="-0.25" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-17" value="Post-processing &lt;br&gt;data ingestion app" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="710" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-19" target="5SC78Nz7y7m_JzuNlaxy-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-19" value="Post-processing database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="295" y="870" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.061;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-34" target="5SC78Nz7y7m_JzuNlaxy-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-34" value="Sensors raw data" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="140" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-35" value="Metabase (Dashboards)" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="1020" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SC78Nz7y7m_JzuNlaxy-37" target="5SC78Nz7y7m_JzuNlaxy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SC78Nz7y7m_JzuNlaxy-37" value="Raw data ingestion app" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="120" width="180" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
